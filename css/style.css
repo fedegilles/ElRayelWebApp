@@ -1,0 +1,338 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:	Admin9
+Version:	2.0
+Autor: Fedegilles
+
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+
+
+[My kind of contents]
+[CSS styles in its order of appearance]
+[To search for a specific css style search in its order of appearance in the HTML file]
+
+1.login
+2.Inicio
+3.Cliente
+
+-------------------------------------------------------------------*/
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	background-color: #F0F0F0;
+}
+
+/*==============================*/
+/*====== 1.login ======*/
+/*==============================*/
+
+.log {
+	position: absolute;
+	background-image: url('../img/lback.jpg');
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.login {
+	width: 60%;
+	margin: auto;
+	margin-top: 20%;
+}
+
+.login form {
+	width: 100%;
+}
+
+.login form img {
+	width: 100%;
+}
+
+.login form input {
+	margin: auto;
+	width: 65%;
+	height: 45px;
+	margin-top: 25px;
+	border-radius: 50px;
+	border: 3px solid #343435;
+	background-color: transparent;
+}
+
+.login form input::placeholder {
+	color: #343435;
+	font-weight: bold;
+}
+
+#boton {
+	margin: auto;
+	width: 40%;
+	height: 40px;
+	margin-top: 35px;
+	border-radius: 50px;
+	background-color: #343435;
+	color: #fff;
+	font-size: 20px;
+}
+
+/*==============================*/
+/*====== 2.Inicio ======*/
+/*==============================*/
+
+.breadcrumb {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 18px;
+	background-color: #d3d3d3;
+	border-radius: 0;
+}
+
+.breadcrumb .main {
+	color: #065abf;
+}
+
+.titlein {
+	font-size: 35px;
+	font-weight: bold;
+	margin-bottom: 35px;
+	color: #b70613;
+}
+
+.form-control {
+	height: 50px;
+}
+
+.btn-default {
+	min-height: 50px;
+	width: auto;
+}
+
+.btn-primary {
+	height: 50px;
+	width: auto;
+	background-color: #004991;
+	border: none;
+}
+
+/*====== Table ======*/
+
+.table {
+	margin-bottom: 5px;
+}
+
+#clients-listtable {
+	margin-top: 30px;
+}
+
+#clients-listtable thead {
+	background-color: #065abf;
+	color: #FFF;
+	font-size: 15px;
+}
+
+#clients-listtable tbody {
+	font-size: 15px;
+}
+
+/*modals styles*/
+
+.modal textarea {
+	resize: none;
+	height: 43px;
+	font-size: 20px;
+}
+
+.control-label {
+	font-size: 20px;
+}
+
+/*modals cancel button*/
+
+.cancelbutton {
+	background-color: #b2404e;
+	color: #FFF;
+	border:0;
+}
+
+.cancelbutton:hover {
+	background-color: #b2404e;
+	color: #FFF;
+	border: 0;
+}
+
+/*modals save button*/
+
+.savebutton {
+	background-color: #004991;
+	color: #FFF;
+	border-color: #004991;
+}
+
+.savebutton:hover {
+	background-color: #004991;
+	color: #FFF;
+	border-color: #004991;
+}
+
+/*==============================*/
+/*====== 3.cliente ======*/
+/*==============================*/
+
+.tittlepages {
+	color: #161616;
+	font-weight: lighter;
+}
+
+.delete-button {
+	height: 50px;
+	width: auto;
+	padding-right: 10px;
+	padding-left: 10px;
+	background-color: #b2404e;
+	color: #FFF;
+	font-size: 15px;
+	font-weight: bolder;
+	border: 0;
+	border-radius: 6px;
+}
+
+/*====== Form ======*/
+
+.form-basic {
+	width: 100%;
+	margin-top: 20px;
+	padding: 0 0 0 0;  
+}
+
+.form-hd {
+	background-color: #065abf;
+	padding: 20px 0 20px 20px;
+	margin-top: 0;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+.form-hd h2 {
+	font-size: 25px;
+	color: #FFF;
+	padding: 0;
+	margin: 0;
+}
+
+.form-hd p {
+	font-size: 15px;
+	color: #d3d3d3;
+	margin-top: 10px;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+
+.edit-button {
+	width: auto;
+	height: 45px;
+	padding-right: 20px;
+	padding-left: 20px;
+	background-color: #CCC;
+	border: 0;
+	border-radius: 6px;
+	margin-right: 10%;
+	color: #065abf;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bolder;
+	font-size: 17px;
+}
+
+.form-bd {
+	background-color: #FFF;
+	padding: 15px 5px 5px 20px;
+}
+
+.form-bd label {
+	font-size: 20px;
+	color: #161616;
+}
+
+.form-bd input {
+	margin-left: 5px;
+	padding-left: 8px;
+	height: 40px;
+	width: 70%;
+	background-color: transparent;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	font-size: 22px;
+	font-weight: bold;
+	color: #5b5b5b;
+}
+
+.form-line {
+	margin-bottom: 20px;
+}
+
+.form-ft {
+	height: 65px;
+	background-color: #FFF;
+	padding: 10px 0 10px 20px;
+	border: 0;
+}
+
+.sub-button {
+	width: auto;
+	height: 45px;
+	padding-right: 23px;
+	padding-left: 23px;
+	background-color: #b2404e;
+	color: #FFF;
+	font-weight: bolder;
+	border: 0;
+	border-radius: 6px;
+	margin-right: 10%;
+}
+
+/*====== Panel ======*/
+
+.panel {
+	margin-top: 20px;
+	border:0;
+}
+
+.panel-heading {
+	background-color: #828181;
+	padding: 20px 0 20px 20px;
+	margin-top: 0;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+.panel-heading h2 {
+	font-size: 36px;
+	color: #FFF;
+	padding: 0;
+	margin: 0;
+}
+
+.panel-heading p {
+	font-size: 20px;
+	color: #d3d3d3;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+.add-button {
+	width: auto;
+	height: 45px;
+	background-color: #CCC;
+	border: 0;
+	border-radius: 6px;
+	margin-right: 5%;
+	color: #828181;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bolder;
+	font-size: 17px;
+}

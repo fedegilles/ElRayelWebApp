@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet">
+	<title>El Rayel-Administración</title>
+</head>
+	<body>
+
+		<ol class="breadcrumb">
+			<li class="main">El Rayel</li>
+			<li class="active">Inicio</li>
+		</ol>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="titlein">El Rayel Administración</h1>
+				</div>				
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group input-group" style="width: 400px;">
+	                    <input type="text" class="form-control" placeholder="Buscar...">
+	                    <span class="input-group-btn">
+	                    <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search" aria-hidden="true""></i> </button>
+	                    </span>
+                	</div>
+				</div>
+				<div class="col-md-6" style="float: right; width: auto;">
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#clientmodal"><span class="glyphicon glyphicon-plus" aria-hidden="true"><span style="font-family: Roboto; font-weight: bold;"> CLIENTE</span>
+					</button>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#providermodal"><span class="glyphicon glyphicon-plus" aria-hidden="true"><span style="font-family: Roboto; font-weight: bold;"> PROOVEDOR</span>
+					</button>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#replacementmodal"><span class="glyphicon glyphicon-plus" aria-hidden="true"><span style="font-family: Roboto; font-weight: bold;"> REPUESTO</span>
+					</button>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#taskmodal"><span class="glyphicon glyphicon-plus" aria-hidden="true"><span style="font-family: Roboto; font-weight: bold;"> TAREA</span>
+					</button>
+				</div>
+				<!--  /.modal -->
+				<div class="modal fade" id="clientmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+				  	<div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      	<div class="modal-header">
+					        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					        	<h4 class="modal-title" id="exampleModalLabel">Nuevo Cliente</h4>
+					      	</div>
+					      	<div class="modal-body">
+					        	<form>
+					          		<div class="form-group">
+					            		<label for="message-text" class="control-label">Nombre</label>
+					            		<textarea class="form-control" id="message-text"></textarea>
+					          		</div>
+					        	</form>
+					      	</div>
+					      	<div class="modal-footer">
+					        	<button type="button" class="btn btn-default cancelbutton" data-dismiss="modal">Cancelar</button>
+					        	<button type="button" class="btn btn-primary savebutton">Guardar cambios</button>
+					      	</div>
+				    	</div>
+				  	</div>
+				</div>
+				<!--  /.modal -->
+				<div class="modal fade" id="providermodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+				  	<div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      	<div class="modal-header">
+					        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					        		<span aria-hidden="true">&times;</span>
+					        	</button>
+					        	<h4 class="modal-title" id="exampleModalLabel">Nuevo Proveedor</h4>
+					      	</div>
+					      	<div class="modal-body">
+					        	<form>
+					          		<div class="form-group">
+					            		<label for="message-text" class="control-label">Message:</label>
+					            		<textarea class="form-control" id="message-text"></textarea>
+					          		</div>
+					        	</form>
+					      	</div>
+					      	<div class="modal-footer">
+					        	<button type="button" class="btn btn-default cancelbutton" data-dismiss="modal">Cancelar</button>
+					        	<button type="button" class="btn btn-primary savebutton">Guardar cambios</button>
+					      	</div>
+				    	</div>
+				  	</div>
+				</div>
+				<!--  /.modal -->
+				<div class="modal fade" id="replacementmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+				  	<div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      	<div class="modal-header">
+					        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					        	<h4 class="modal-title" id="exampleModalLabel">Nuevo Repuesto</h4>
+					      	</div>
+					      	<div class="modal-body">
+					        	<form>
+					          		<div class="form-group">
+					            		<label for="message-text" class="control-label">Message:</label>
+					            		<textarea class="form-control" id="message-text"></textarea>
+					          		</div>
+					        	</form>
+					      	</div>
+					      	<div class="modal-footer">
+					        	<button type="button" class="btn btn-default cancelbutton" data-dismiss="modal">Cancelar</button>
+					        	<button type="button" class="btn btn-primary savebutton">Guardar cambios</button>
+					      	</div>
+				    	</div>
+				  	</div>
+				</div>
+				<!--  /.modal -->
+				<div class="modal fade" id="taskmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+				  	<div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      	<div class="modal-header">
+					        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					        	<h4 class="modal-title" id="exampleModalLabel">Nueva Tarea</h4>
+					      	</div>
+					      	<div class="modal-body">
+					        	<form>
+					          		<div class="form-group">
+					            		<label for="message-text" class="control-label">Message:</label>
+					            		<textarea class="form-control" id="message-text"></textarea>
+					          		</div>
+					        	</form>
+					      	</div>
+					      	<div class="modal-footer">
+					        	<button type="button" class="btn btn-default cancelbutton" data-dismiss="modal">Cancelar</button>
+					        	<button type="button" class="btn btn-primary savebutton">Guardar cambios</button>
+					      	</div>
+				    	</div>
+				  	</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+	                    <label class="radio-inline">
+	                      <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked="">Cliente </label>
+	                    <label class="radio-inline">
+	                      <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="option2">Vehículo </label>
+	                    <label class="radio-inline">
+	                      <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline3" value="option3">Proveedor</label>
+                  </div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<table class="table" id="clients-listtable">
+						<thead>
+							<tr>
+								<th>Nombre del cliente</th>
+								<th>Chapa vehículo</th>
+								<th>Última fecha</th>
+								<th>Presupuesto última fecha existente</th>
+								<th>Estado</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">Jhon Doe</th>
+								<td>ABC 123</td>
+								<td>Viejo</td>
+								<td>$18.500</td>
+								<td>@mdo</td>
+								<td>@mdo</td>
+							</tr>
+							<tr>
+								<th scope="row">Jacob Clein</th>
+								<td>ABC 123</td>
+								<td>Viejo</td>
+								<td>$18.500</td>
+								<td>@fat</td>
+								<td>@fat</td>
+							</tr>
+							<tr>
+								<th scope="row">Matthew Damon</th>
+								<td>ABC 123</td>
+								<td>Viejo</td>
+								<td>$18.500</td>
+								<td>@twitter</td>
+								<td>@twitter</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+
+    	<script src="js/jquery-3.2.1.js"></script>
+    	<script src="js/bootstrap.js"></script>
+	</body>
+</html>

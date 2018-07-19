@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet">
+	<title>El Rayel-Fichas</title>
+</head>
+	<body>
+
+		<ol class="breadcrumb">
+			<li class="main">El Rayel</li>
+			<li><a href="inicio.html">Inicio</a></li>
+			<li class="active">Detalle Ficha</li>
+		</ol>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<button data-toggle="modal" data-target="#yousure" class="delete-button pull-right" type="button">
+						<span>ELIMINAR FICHA</span>
+					</button>
+					<h1 class="tittlepages">El Rayel - <strong>Detalle Ficha</strong></h1>
+					<!--  /.modal -->
+					<div class="modal fade in" id="yousure" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+			            <div class="modal-dialog modal-sm">
+			              <div class="modal-content">
+			                <div class="modal-header">
+			                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			                  <h4 class="modal-title" id="myModalLabel2">Eliminación de Ficha </h4>
+			                </div>
+			                <div class="modal-body">
+			                  <p>Usted eliminará esta Ficha</p>
+			                </div>
+			                <div class="modal-footer">
+			                  <button type="button" class="btn" data-dismiss="modal">Cancelar</button>
+			                  <button type="button" class="btn btn-danger">Eliminar</button>
+			                </div>
+			              </div>
+			              <!-- /.modal-content --> 
+			            </div>
+			            <!-- /.modal-dialog --> 
+			        </div>
+				</div>				
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<form class="form-basic">
+						<div class="form-hd">
+							<h2>Datos Generales
+								<button class="btn edit-button pull-right" type="button">
+									<span>EDITAR</span>
+								</button>
+								<p>ALTA: 05/12/2018 </p>
+							</h2>
+						</div>
+						<div class="form-bd">
+							<div class="form-line" ">
+								<label for="name">Nombre:</label>
+								<input name="Name" type="Name" value="">
+							</div>
+							<div class="form-line" ">
+								<label for="name">Apellido:</label>
+								<input name="Name" type="Name" value="">
+							</div>
+						</div>
+						<div class="form-ft">
+							<button class="btn sub-button pull-right" type="button">
+								<span>SUBMIT</span>
+							</button>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-6">
+					<form class="form-basic">
+						<div class="form-hd">
+							<h2>Datos de Vehículo
+								<button class="btn edit-button pull-right" type="button">
+									<span>EDITAR</span>
+								</button>
+								<p>ALTA: 05/12/2018 </p>
+							</h2>
+						</div>
+						<div class="form-bd">
+							<div class="form-line" ">
+								<label for="name">Marca:</label>
+								<input name="Name" type="Name" value="">
+							</div>
+							<div class="form-line" ">
+								<label for="name">Modelo:</label>
+								<input name="Name" type="Name" value="">
+							</div>
+						</div>
+						<div class="form-ft">
+							<button class="btn sub-button pull-right" type="button">
+								<span>SUBMIT</span>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6">
+		            <div class="panel">
+		              	<div class="panel-heading">
+			                <h2>Tareas
+			                <button type="button" data-toggle="modal" data-target="#createTask" class="btn add-button pull-right">
+			                	<span>AGREGAR TAREA</span>
+			                </button>
+			                <p>2 Elementos</p>
+			                </h2>
+		              	</div>
+		              	<!--  /.modal -->
+		              	<div class="modal fade" id="createTask" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+						  	<div class="modal-dialog" role="document">
+							    <div class="modal-content">
+							      	<div class="modal-header">
+							        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							        	<h4 class="modal-title" id="exampleModalLabel">Nueva Tarea</h4>
+							      	</div>
+							      	<div class="modal-body">
+							        	<form>
+							          		<div class="form-group">
+							            		<label for="message-text" class="control-label">Tarea:</label>
+							            		<textarea class="form-control" id="message-text"></textarea>
+							          		</div>
+							        	</form>
+							      	</div>
+							      	<div class="modal-footer">
+							        	<button type="button" class="btn btn-default cancelbutton" data-dismiss="modal">Cancelar</button>
+							        	<button type="button" class="btn btn-primary savebutton">Guardar cambios</button>
+							      	</div>
+						    	</div>
+						  	</div>
+						</div>
+
+			            <div class="todolist">
+				            <table class=" table">
+				                <tbody>
+				                  	<tr>
+				                    	<td class="primary statusmail">
+						                    <div class="textmail">
+						                        <strong>TAREA NUMERO UNO</strong>
+						                        <p>Estado: <strong>Finalizada</strong></p>
+						                    </div>
+				                    	</td>
+				                  	</tr>
+				                  	<tr>
+				                    	<td class="primary statusmail">
+				                      		<div class="textmail">
+				                        		<strong>TAREA NUMERO DOS</strong>
+				                        		<p>Estado: <strong>Finalizada</strong></p>
+				                      		</div>
+				                    	</td>
+				                  	</tr>
+				                </tbody>
+				            </table>
+			            </div>
+		            </div>
+		        </div>
+
+		        <div class="col-md-6">
+		            <div class="panel">
+		              	<div class="panel-heading">
+			                <h2>Repuestos
+			                <button type="button" data-toggle="modal" data-target="#createReplace" class="btn add-button pull-right">
+			                	<span>AGREGAR REPUESTO</span>
+			                </button>
+			                <p>1 Elemento</p>
+			                </h2>
+		              	</div>
+		              	<!--  /.modal -->
+		              	<div class="modal fade" id="createReplace" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+						  	<div class="modal-dialog" role="document">
+							    <div class="modal-content">
+							      	<div class="modal-header">
+							        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							        	<h4 class="modal-title" id="exampleModalLabel">Nuevo Respuesto</h4>
+							      	</div>
+							      	<div class="modal-body">
+							        	<form>
+							          		<div class="form-group">
+							            		<label for="message-text" class="control-label">Tipo:</label>
+							            		<textarea class="form-control" id="message-text"></textarea>
+							          		</div>
+							        	</form>
+							      	</div>
+							      	<div class="modal-footer">
+							        	<button type="button" class="btn btn-default cancelbutton" data-dismiss="modal">Cancelar</button>
+							        	<button type="button" class="btn btn-primary savebutton">Guardar cambios</button>
+							      	</div>
+						    	</div>
+						  	</div>
+						</div>
+
+			            <div class="todolist">
+				            <table class="table">
+				                <tbody>
+				                	<tr>
+					                    <td class="primary statusmail">
+					                      <strong>Repuesto 1</strong>
+					                      <div class="row">
+					                        <div class="col-md-8">
+					                          <div class="form-group">
+					                            <label>Proveedor</label>
+					                            <select class="form-control">
+					                              <option>1</option>
+					                              <option>2</option>
+					                              <option>3</option>
+					                              <option>4</option>
+					                              <option>5</option>
+					                            </select>
+					                          </div>
+					                        </div>
+					                        <div class="col-md-4">
+					                          <div class="form-group">
+					                            <label>Precio</label>
+					                            <input class="form-control">
+					                          </div>
+					                        </div>
+					                      </div>
+					                      <span class="pull-right text-muted">
+					                        <a href="javascript:void(0)" data-toggle="modal" data-target="#addtodo" class="btn btn-link">
+					                          <i class="fa fa-edit"></i>
+					                        </a>
+					                        <a href="" class="btn btn-link">
+					                          <i class="fa fa-trash"></i>
+					                        </a>
+					                      </span>
+					                    </td>
+					                </tr>
+				                  	<tr>
+				                    	<td class="primary statusmail">
+						                    <div class="textmail">
+						                        <strong>TAREA NUMERO UNO</strong>
+						                        <p>Estado: <strong>Finalizada</strong></p>
+						                    </div>
+				                    	</td>
+				                  	</tr>
+				                </tbody>
+				            </table>
+			            </div>
+		            </div>
+		        </div>
+			</div>
+		</div>
+
+
+
+    	<script src="js/jquery-3.2.1.js"></script>
+    	<script src="js/bootstrap.js"></script>
+	</body>
+</html>

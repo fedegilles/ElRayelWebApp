@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet">
+	<title>El Rayel-Clientes</title>
+</head>
+	<body>
+
+		<ol class="breadcrumb">
+			<li class="main">El Rayel</li>
+			<li><a href="inicio.html">Inicio</a></li>
+			<li class="active">Detalle Cliente</li>
+		</ol>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<button data-toggle="modal" data-target="#yousure" class="delete-button pull-right" type="button">
+						<span>ELIMINAR CLIENTE</span>
+					</button>
+					<h1 class="tittlepages">El Rayel - <strong> Detalle Cliente</strong></h1>
+					<!--  /.modal -->
+					<div class="modal fade in" id="yousure" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+			            <div class="modal-dialog modal-sm">
+			              <div class="modal-content">
+			                <div class="modal-header">
+			                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			                  <h4 class="modal-title" id="myModalLabel2">Eliminación de cliente </h4>
+			                </div>
+			                <div class="modal-body">
+			                  <p>Usted eliminará al cliente</p>
+			                </div>
+			                <div class="modal-footer">
+			                  <button type="button" class="btn" data-dismiss="modal">Cancelar</button>
+			                  <button type="button" class="btn btn-danger">Eliminar</button>
+			                </div>
+			              </div>
+			              <!-- /.modal-content --> 
+			            </div>
+			            <!-- /.modal-dialog --> 
+			        </div>
+				</div>				
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<form class="form-basic">
+						<div class="form-hd">
+							<h2>Datos Cliente
+								<button class="btn edit-button pull-right" type="button">
+									<span>EDITAR</span>
+								</button>
+								<p>ALTA: 05/12/2018 </p>
+							</h2>
+						</div>
+						<div class="form-bd">
+							<div class="form-line" ">
+								<label for="name">Nombre:</label>
+								<input name="Name" type="Name" value="">
+							</div>
+							<div class="form-line" ">
+								<label for="name">Apellido:</label>
+								<input name="Name" type="Name" value="">
+							</div>
+						</div>
+						<div class="form-ft">
+							<button class="btn sub-button pull-right" type="button">
+								<span>SUBMIT</span>
+							</button>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-6">
+					<form class="form-basic">
+						<div class="form-hd">
+							<h2>Datos de Facturación
+								<button class="btn edit-button pull-right" type="button">
+									<span>EDITAR</span>
+								</button>
+								<p>ALTA: 05/12/2018 </p>
+							</h2>
+						</div>
+						<div class="form-bd">
+							<div class="form-line" ">
+								<label for="name">Nombre:</label>
+								<input name="Name" type="Name" value="">
+							</div>
+							<div class="form-line" ">
+								<label for="name">CUIT CUIL</label>
+								<input name="Name" type="Name" value="">
+							</div>
+						</div>
+						<div class="form-ft">
+							<button class="btn sub-button pull-right" type="button">
+								<span>SUBMIT</span>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+		            <div class="panel">
+		              	<div class="panel-heading">
+			                <h2>Vehiculos
+			                <button type="button" data-toggle="modal" data-target="#createVehicle" class="btn add-button pull-right">
+			                	<span>AGREGAR VEHICULO</span>
+			                </button>
+			                <p>2 Elementos</p>
+			                </h2>
+		              	</div>
+		              	<!--  /.modal -->
+		              	<div class="modal fade" id="createVehicle" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+						  	<div class="modal-dialog" role="document">
+							    <div class="modal-content">
+							      	<div class="modal-header">
+							        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							        	<h4 class="modal-title" id="exampleModalLabel">Nuevo Vehiculo</h4>
+							      	</div>
+							      	<div class="modal-body">
+							        	<form>
+							          		<div class="form-group">
+							            		<label for="message-text" class="control-label">Chapa</label>
+							            		<textarea class="form-control" id="message-text"></textarea>
+							          		</div>
+							        	</form>
+							      	</div>
+							      	<div class="modal-footer">
+							        	<button type="button" class="btn btn-default cancelbutton" data-dismiss="modal">Cancelar</button>
+							        	<button type="button" class="btn btn-primary savebutton">Guardar cambios</button>
+							      	</div>
+						    	</div>
+						  	</div>
+						</div>
+
+			            <div class="todolist">
+				            <table class=" table">
+				                <tbody>
+				                  	<tr>
+				                    	<td class="primary statusmail">
+						                    <div class="textmail">
+						                        <strong>HONDA CIVIC</strong>
+						                        <p>Chapa: AC 2314 CVFSAWE</p>
+						                    </div>
+				                    	</td>
+				                  	</tr>
+				                  	<tr>
+				                    	<td class="primary statusmail">
+				                      		<div class="textmail">
+				                        		<strong>HONDA CIVIC</strong>
+				                        		<p>Chapa: AC 2314 CVFSAWE</p>
+				                      		</div>
+				                    	</td>
+				                  	</tr>
+				                </tbody>
+				            </table>
+			            </div>
+		            </div>
+		        </div>
+			</div>
+		</div>
+
+
+
+    	<script src="js/jquery-3.2.1.js"></script>
+    	<script src="js/bootstrap.js"></script>
+	</body>
+</html>

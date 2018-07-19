@@ -1,0 +1,25 @@
+/*------------------------------------------------------------------
+[navbar header Stylesheet]
+
+Project:	Admin9
+Version:	2.0
+Autor: Fedegilles
+
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------*/
+
+.navbar {
+	margin-bottom: 0;
+	padding: 10px 0 10px 0;
+	border-radius: 0;
+}
+
+.navbar-right {
+	margin-right: 15px;
+	border: 0;
+}
+
+.iso {
+	width: 25%;
+}
